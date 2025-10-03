@@ -1,0 +1,59 @@
+{
+  "positive": {
+    "title": "Produk Tes Kualitas Tinggi",
+    "price": 109.95,
+    "description": "Sebuah produk tes yang kuat dan andal untuk automation.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+  },
+  "negative": {
+    "missing_title": {
+      "case_name": "Judul tidak diisi",
+      "payload": {
+        "price": 50.00,
+        "description": "Produk tanpa judul.",
+        "category": "electronics",
+        "image": "https://example.com/image.jpg"
+      }
+    },
+    "invalid_price_type": {
+      "case_name": "Tipe data harga salah (string)",
+      "payload": {
+        "title": "Produk dengan Harga Tidak Valid",
+        "price": "seratus ribu",
+        "description": "Harga produk ini bukan angka.",
+        "category": "electronics",
+        "image": "https://example.com/image.jpg"
+      }
+    },
+    "price_is_zero": {
+      "case_name": "Harga adalah nol",
+      "payload": {
+        "title": "Produk Harga Nol",
+        "price": 0,
+        "description": "Harga produk ini nol.",
+        "category": "electronics",
+        "image": "https://example.com/image.jpg"
+      }
+    },
+    "price_is_negative": {
+      "case_name": "Harga adalah negatif",
+      "payload": {
+        "title": "Produk Harga Negatif",
+        "price": -10,
+        "description": "Harga produk ini negatif.",
+        "category": "electronics",
+        "image": "https://example.com/image.jpg"
+      }
+    },
+    "missing_price": {
+      "case_name": "Harga tidak diisi",
+      "payload": {
+        "title": "Produk Tanpa Harga",
+        "description": "Harga produk ini tidak diisi.",
+        "category": "electronics",
+        "image": "https://example.com/image.jpg"
+      }
+    }
+  }
+}
